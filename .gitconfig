@@ -1,0 +1,18 @@
+[user]
+	name = Dmitriy Likhten
+	email = dlikhten@gmail.com
+[color]
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto
+[format]
+	pretty = oneline
+[alias]
+	st = status
+	co = checkout
+	ci = commit
+	amend = commit --amend
+	cim = commit -m
+	ciam = commit -am
+
