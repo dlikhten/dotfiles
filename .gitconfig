@@ -16,3 +16,7 @@
 	cim = commit -m
 	ciam = commit -am
 
+[mergetool]
+	keepBackup = true
+[core]
+	autocrlf = true
