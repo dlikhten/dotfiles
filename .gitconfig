@@ -18,5 +18,3 @@
 
 [mergetool]
 	keepBackup = true
-[core]
-	autocrlf = true
