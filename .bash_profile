@@ -17,12 +17,7 @@ function __git_branch {
 }
 
 function __my_rvm_ruby_version {
-  local gemset=$(echo $GEM_HOME | awk -F'@' '{print $2}')
-  [ "$gemset" != "" ] && gemset="@$gemset"
-  local version=$(echo $MY_RUBY_HOME | awk -F'-' '{print $2}')
-  [ "$version" == "1.8.7" ] && version=""
-  local full="$version$gemset"
-  [ "$full" != "" ] && echo "$full "
+  echo "`~/.rvm/bin/rvm-prompt v g` "
 }
 
 bash_prompt() {
@@ -61,7 +56,7 @@ bash_prompt() {
   local UC=$W                 # user's color
   [ $UID -eq "0" ] && UC=$R   # root's color
 
-  PS1="$B\$(~/.rvm/bin/rvm-prompt v g)$Y$EMY\w$EMB\$(__git_branch)$EMB\$(__git_dirty)${NONE} $ "
+  PS1="$B\$(__my_rvm_ruby_version)$Y$EMY\w$EMB\$(__git_branch)$EMB\$(__git_dirty)${NONE} $ "
 }
 
 bash_prompt
