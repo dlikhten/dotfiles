@@ -61,7 +61,7 @@ bash_prompt() {
   local UC=$W                 # user's color
   [ $UID -eq "0" ] && UC=$R   # root's color
 
-  PS1="$B\$(~/.rvm/bin/rvm-prompt v g)$Y$EMY\w$EMB\$(__git_branch)$EMB\$(__git_dirty)${NONE} $ "
+  PS1="$B\$(~/.rvm/bin/rvm-prompt v g) $Y$EMY\w$EMB\$(__git_branch)$EMB\$(__git_dirty)${NONE} $ "
 }
 
 bash_prompt
