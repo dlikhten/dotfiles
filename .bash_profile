@@ -1,4 +1,5 @@
 . ~/.bash_alias
+. ~/.bash_custom_alias
 
 if [ -f `brew --prefix`/etc/bash_completion ]; then
     . `brew --prefix`/etc/bash_completion

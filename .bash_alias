@@ -1,2 +1,2 @@
-alias door='cd ~/repos/doorsteps'
 alias vim='mvim'
+alias dotfiles='cd ~/repos/dotfiles'
