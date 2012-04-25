@@ -6,7 +6,7 @@ require 'fileutils'
 task :default => [:install]
 
 task :install do
-  exclude_list = ['~/.', '~/..', '~/.rvmrc']
+  exclude_list = ['~/.', '~/..', '~/.rvmrc', '~/.git']
   cwd = File.expand_path("..", __FILE__)
 
   Dir.glob("#{cwd}/.*").each do |item|
