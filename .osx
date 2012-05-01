@@ -29,3 +29,5 @@ defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
 # Enable snap-to-grid for desktop icons
 /usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
 
+# Disable mouse acceleration
+defaults write .GlobalPreferences com.apple.mouse.scaling -1
