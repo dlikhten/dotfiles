@@ -1,4 +1,7 @@
 alias vim='mvim'
 alias dotfiles='cd ~/repos/dotfiles'
+alias vimconf='cd ~/.vim'
 alias ls='ls -G'
 alias clear='echo "use command+k"'
+alias cd..='cd ..'
+alias rr='touch tmp/restart.txt'
