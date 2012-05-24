@@ -31,3 +31,6 @@ defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
 
 # Disable mouse acceleration
 defaults write .GlobalPreferences com.apple.mouse.scaling -1
+
+# Disable press and hold to write alt characters
+defaults write -g ApplePressAndHoldEnabled -bool false
