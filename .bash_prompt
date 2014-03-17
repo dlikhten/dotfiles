@@ -10,7 +10,16 @@ function __git_branch {
 }
 
 function __my_rvm_ruby_version {
-  echo "`~/.rvm/bin/rvm-prompt v g` "
+  echo "r`~/.rvm/bin/rvm-prompt v g` "
+}
+
+function __my_jenv_java_version {
+  output=`jenv version | sed "s/ .*//" | sed s/oracle64-//`
+  if [ "$output" == 'system' ]; then
+    echo ""
+  else
+    echo "j$output "
+  fi
 }
 
 bash_prompt() {
@@ -49,7 +58,7 @@ bash_prompt() {
   local UC=$W                 # user's color
   [ $UID -eq "0" ] && UC=$R   # root's color
 
-  PS1="$B\$(__my_rvm_ruby_version)$Y$EMY\w$EMB\$(__git_branch)$EMB\$(__git_dirty)${NONE} $ "
+  PS1="$B\$(__my_rvm_ruby_version)\$(__my_jenv_java_version)$Y$EMY\w$EMB\$(__git_branch)$EMB\$(__git_dirty)${NONE} $ "
 }
 
 # configure the bash prompt

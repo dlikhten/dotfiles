@@ -20,8 +20,16 @@ shopt -s cdspell
 export LC_ALL="en_US.UTF-8"
 export LANG="en_US"
 
+# bash completion
 if [ -f `brew --prefix`/etc/bash_completion ]; then
     . `brew --prefix`/etc/bash_completion
 fi
 
+# rvm
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # load RVM
+
+# jenv (rvm for java)
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
+
+if which jenv > /dev/null; then eval "$(jenv init -)"; fi
