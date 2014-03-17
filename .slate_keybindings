@@ -1,0 +1,16 @@
+config defaultToCurrentScreen true
+config nudgePercentOf screenSize
+config resizePercentOf screenSize
+
+alias half-screen-width screenSizeX/2
+
+bind left:ctrl,alt,cmd       corner top-left  resize:${half-screen-width};screenSizeY
+bind right:ctrl,alt,cmd      corner top-right resize:${half-screen-width};screenSizeY
+bind up:ctrl,alt,cmd         corner top-left  resize:screenSizeX;screenSizeY
+bind down:ctrl,alt,cmd       move screenOriginX+screenSizeX*0.1;screenOriginY screenSizeX*0.8;screenSizeY
+bind [:ctrl,alt,cmd          throw prev
+bind ]:ctrl,alt,cmd          throw next
+
+bind r:ctrl,alt,cmd relaunch
+bind z:ctrl,alt,cmd undo
+
