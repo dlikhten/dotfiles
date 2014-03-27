@@ -11,6 +11,12 @@ bind down:ctrl,alt,cmd       move screenOriginX+screenSizeX*0.1;screenOriginY sc
 bind [:ctrl,alt,cmd          throw prev
 bind ]:ctrl,alt,cmd          throw next
 
+
+bind 1:ctrl,alt,cmd          move screenOriginX;screenOriginY screenSizeX/7*2;screenSizeY
+bind 2:ctrl,alt,cmd          move screenOriginX+screenSizeX/7*2;screenOriginY screenSizeX/7*3;screenSizeY
+bind 3:ctrl,alt,cmd          move screenOriginX+screenSizeX/7*5;screenOriginY screenSizeX/7*2;screenSizeY
+
+
 bind r:ctrl,alt,cmd relaunch
 bind z:ctrl,alt,cmd undo
 
