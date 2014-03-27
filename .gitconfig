@@ -15,7 +15,8 @@
   amend = commit --amend
   cim = commit -m
   ciam = commit -am
-	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
+  lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
+  newcase = "!f() { git fetch dc-master && git checkout -b case/$1; }; f"
 
 [mergetool]
   keepBackup = true
