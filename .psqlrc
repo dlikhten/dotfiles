@@ -3,6 +3,9 @@
 \set HISTSIZE 2000
 \timing
 \set PROMPT1 '(%n@%M:%>) [%/] > '
-\set PROMPT2 ''
+\set PROMPT2 '(%n@%M:%>) [%/] | '
 \encoding unicode
 \x auto
+\unset AUTOCOMMIT
+\set ON_ERROR_ROLLBACK
+\set VERBOSITY terse
