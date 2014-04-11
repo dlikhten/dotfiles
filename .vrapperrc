@@ -1,0 +1,14 @@
+' Highlight search occurrences
+set hlsearch
+' Use incremental search
+set incsearch
+
+' Smart / auto indenting
+set smartindent
+set autoindent
+
+' 4 spaces = 1 tab
+set tabstop=4
+set shiftwidth=4
+' Don't convert tabs to spaces
+set noexpandtab
