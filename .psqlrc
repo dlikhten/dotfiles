@@ -1,11 +1,40 @@
-\pset null 'NULL'
+-- unicode!
+\pset linestyle unicode
+\encoding unicode
+
+-- well defined history file
 \set HISTFILE ~/.psql_history- :HOST - :DBNAME
 \set HISTSIZE 2000
-\timing
-\set PROMPT1 '(%n@%M:%>) [%/] > '
-\set PROMPT2 '(%n@%M:%>) [%/] | '
-\encoding unicode
-\x auto
+
+
+-- disable autocommit
 \unset AUTOCOMMIT
+
+-- each statement creates a checkpoint, roll it back on error
 \set ON_ERROR_ROLLBACK
+
+-- stop execution when an error occurs
+\set ON_ERROR_STOP
+
+-- pretty borders
+\pset border 2
+
+-- wrap columns rather than make ugly rows
+\pset format wrapped
+
+-- nulls are easy to distinguish
+\pset null ¤
+
+-- purdy prompt
+\set PROMPT1 '(%[%033[33;1m%]%n@%/%[%033[0m%])%x [psql]> '
+\set PROMPT2 '(%[%033[33;1m%]%n@%/%[%033[0m%])%x [psql]| '
+
+
+-- display timing information
+\timing
+
+\x auto
+
+-- terse verbosity, when looking for compilation errors please make sure to change
+-- to \set VERBOSITY all
 \set VERBOSITY terse
