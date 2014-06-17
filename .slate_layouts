@@ -42,4 +42,5 @@ layout solo 'Mail'              corner top-left resize:screenSizeX;screenSizeY 0
 layout solo 'HipChat'           corner top-left resize:screenSizeX;screenSizeY 0
 layout solo 'Skype'             corner top-left resize:screenSizeX;screenSizeY 0
 layout solo 'Calendar'          corner top-left resize:screenSizeX;screenSizeY 0
+layout solo 'Google Music'      corner top-left resize:screenSizeX;screenSizeY 0
 layout solo 'Notes'             move screenOriginX+screenSizeX*0.1;screenOriginY screenSizeX*0.8;screenSizeY 0
