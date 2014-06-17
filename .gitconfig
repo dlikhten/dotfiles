@@ -6,8 +6,9 @@
   diff = auto
   interactive = auto
   status = auto
+	ui = 1
 [format]
-  pretty = oneline
+	pretty = fuller
 [alias]
   st = status
   co = checkout
@@ -16,7 +17,8 @@
   cim = commit -m
   ciam = commit -am
   lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
-  newcase = "!f() { git fetch dc-master && git checkout -b case/$1; }; f"
+  newcase = "!f() { git checkout resolved && git pull --rebase && git checkout -b case/$1; }; f"
+  logp = log -w -p --follow
 
 [mergetool]
   keepBackup = true
@@ -30,3 +32,5 @@
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
+[help]
+	autocorrect = 10
