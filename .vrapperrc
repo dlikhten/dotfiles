@@ -12,3 +12,15 @@ set tabstop=4
 set shiftwidth=4
 ' Don't convert tabs to spaces
 set noexpandtab
+
+' Use macvim
+set gvimpath=mvim
+
+' When changing tabs, immediately enter normal mode
+:set startnormalmode
+
+' show line numbers
+:set number
+
+' highlight the cursor line
+:set cursorline
