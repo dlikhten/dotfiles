@@ -30,6 +30,10 @@ fi
 
 # jenv (rvm for java)
 export PATH="$HOME/.jenv/bin:$PATH"
+
+# path for brew
+export PATH="/usr/local/bin:$PATH"
+
 eval "$(jenv init -)"
 
 if which jenv > /dev/null; then eval "$(jenv init -)"; fi

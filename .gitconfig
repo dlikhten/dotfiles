@@ -19,6 +19,7 @@
   lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
   newcase = "!f() { git checkout resolved && git pull --rebase && git checkout -b case/$1; }; f"
   logp = log -w -p --follow
+  wip = !git add -u && git commit -m "WIP"
 
 [mergetool]
   keepBackup = true
@@ -34,3 +35,5 @@
 	trustExitCode = true
 [help]
 	autocorrect = 10
+[fetch]
+	prune = true

@@ -6,26 +6,39 @@ layout dual-small-at-donorschoose 'Terminal'          corner top-left resize:scr
 layout dual-small-at-donorschoose 'MacVim'            corner top-left resize:screenSizeX;screenSizeY 1
 layout dual-small-at-donorschoose 'Google Chrome'     corner top-left resize:screenSizeX;screenSizeY 1
 layout dual-small-at-donorschoose 'Spring Tool Suite' corner top-left resize:screenSizeX;screenSizeY 1
+layout dual-small-at-donorschoose '0xDBE'             corner top-left resize:screenSizeX;screenSizeY 1
 layout dual-small-at-donorschoose 'Mail'              corner top-left resize:screenSizeX;screenSizeY 0
+layout dual-small-at-donorschoose 'Outlook'           corner top-left resize:screenSizeX;screenSizeY 0
 layout dual-small-at-donorschoose 'HipChat'           corner top-left resize:screenSizeX;screenSizeY 0
 layout dual-small-at-donorschoose 'Skype'             corner top-left resize:screenSizeX;screenSizeY 0
 layout dual-small-at-donorschoose 'Calendar'          corner top-left resize:screenSizeX;screenSizeY 0
+layout dual-small-at-donorschoose 'IntelliJ IDEA 14'  corner top-left resize:screenSizeX;screenSizeY 0
 layout dual-small-at-donorschoose 'Notes'             move screenOriginX+screenSizeX*0.1;screenOriginY screenSizeX*0.8;screenSizeY 1
 
 default dual-at-donorschoose resolutions:3840x2160;1440x900
 default dual-at-donorschoose resolutions:3840x2160;1920x1200
 default dual-at-donorschoose resolutions:2560x1440;1440x900
 default dual-at-donorschoose resolutions:2560x1440;1920x1200
+default dual-at-donorschoose resolutions:2560x1440;1680x1050
+default dual-at-donorschoose resolutions:1440x2560;1440x900
+default dual-at-donorschoose resolutions:1440x2560;1920x1200
+default dual-at-donorschoose resolutions:1440x2560;1680x1050
+default dual-at-donorschoose resolutions:1440x900;1440x2560
+default dual-at-donorschoose resolutions:1920x1200;1440x2560
+default dual-at-donorschoose resolutions:1680x1050;1440x2560
 
 layout dual-at-donorschoose 'SourceTree'        corner top-left resize:screenSizeX;screenSizeY 1
 layout dual-at-donorschoose 'Terminal'          corner top-left resize:screenSizeX;screenSizeY 1
 layout dual-at-donorschoose 'MacVim'            corner top-left resize:screenSizeX;screenSizeY 1
 layout dual-at-donorschoose 'Google Chrome'     corner top-left resize:screenSizeX;screenSizeY 1
 layout dual-at-donorschoose 'Spring Tool Suite' corner top-left resize:screenSizeX;screenSizeY 1
+layout dual-at-donorschoose '0xDBE'             corner top-left resize:screenSizeX;screenSizeY 1
 layout dual-at-donorschoose 'Mail'              corner top-left resize:screenSizeX;screenSizeY 0
+layout dual-at-donorschoose 'Outlook'           corner top-left resize:screenSizeX;screenSizeY 0
 layout dual-at-donorschoose 'HipChat'           corner top-left resize:screenSizeX;screenSizeY 0
 layout dual-at-donorschoose 'Skype'             corner top-left resize:screenSizeX;screenSizeY 0
 layout dual-at-donorschoose 'Calendar'          corner top-left resize:screenSizeX;screenSizeY 0
+layout dual-at-donorschoose 'IntelliJ IDEA 14'  corner top-left resize:screenSizeX;screenSizeY 0
 layout dual-at-donorschoose 'Notes'             move screenOriginX+screenSizeX*0.1;screenOriginY screenSizeX*0.8;screenSizeY 1
 
 
@@ -33,14 +46,18 @@ default dual-at-home resolutions:1960x1080;1440x900
 
 default solo resolutions:1440x900
 default solo resolutions:1920x1200
+default solo resolutions:1680x1050
 layout solo 'SourceTree'        corner top-left resize:screenSizeX;screenSizeY 0
 layout solo 'Terminal'          corner top-left resize:screenSizeX;screenSizeY 0
 layout solo 'MacVim'            corner top-left resize:screenSizeX;screenSizeY 0
 layout solo 'Google Chrome'     corner top-left resize:screenSizeX;screenSizeY 0
 layout solo 'Spring Tool Suite' corner top-left resize:screenSizeX;screenSizeY 0
 layout solo 'Mail'              corner top-left resize:screenSizeX;screenSizeY 0
+layout solo 'Outlook'           corner top-left resize:screenSizeX;screenSizeY 0
 layout solo 'HipChat'           corner top-left resize:screenSizeX;screenSizeY 0
 layout solo 'Skype'             corner top-left resize:screenSizeX;screenSizeY 0
 layout solo 'Calendar'          corner top-left resize:screenSizeX;screenSizeY 0
 layout solo 'Google Music'      corner top-left resize:screenSizeX;screenSizeY 0
+layout solo '0xDBE'             corner top-left resize:screenSizeX;screenSizeY 0
+layout solo 'IntelliJ IDEA 14'  corner top-left resize:screenSizeX;screenSizeY 0
 layout solo 'Notes'             move screenOriginX+screenSizeX*0.1;screenOriginY screenSizeX*0.8;screenSizeY 0
