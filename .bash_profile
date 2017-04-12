@@ -37,3 +37,17 @@ export PATH="/usr/local/bin:$PATH"
 eval "$(jenv init -)"
 
 if which jenv > /dev/null; then eval "$(jenv init -)"; fi
+
+# Avoid duplicates
+export HISTCONTROL=ignoredups:erasedups
+# When the shell exits, append to the history file instead of overwriting it
+shopt -s histappend
+
+# After each command, append to the history file and reread it
+#export PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND$'\n'}history -a; history -c; history -r"
+
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+
+
+# gitql
+export DYLD_LIBRARY_PATH=$PWD/libgit2/install/lib

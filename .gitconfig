@@ -1,5 +1,5 @@
 [user]
-  name = Dmitriy Likhten
+	name = Dmitriy Likhten
   email = dlikhten@gmail.com
 [color]
   branch = auto
@@ -12,14 +12,16 @@
 [alias]
   st = status
   co = checkout
-  ci = commit
-  amend = commit --amend
-  cim = commit -m
-  ciam = commit -am
   lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
   newcase = "!f() { git checkout resolved && git pull --rebase && git checkout -b case/$1; }; f"
   logp = log -w -p --follow
   wip = !git add -u && git commit -m "WIP"
+	undo-commit = reset --soft HEAD^
+	list-ignored = !git ls-files -v | grep \"^[[:lower:]]\"
+  pull-request = !git push origin && open "https://github.com/DonorsChoose/donorschoose-web/compare/resolved...dlikhten:`git symbolic-ref --short HEAD`"
+  p = push origin
+  pf = push origin --force
+  pr = pull --rebase dc-master resolved
 
 [mergetool]
   keepBackup = true
@@ -37,3 +39,10 @@
 	autocorrect = 10
 [fetch]
 	prune = true
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+
+[rebase]
+  autostash = true

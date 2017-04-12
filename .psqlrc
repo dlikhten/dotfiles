@@ -23,7 +23,8 @@
 \pset format wrapped
 
 -- nulls are easy to distinguish
-\pset null ¤
+--\pset null ¤
+\pset null '(╯°□°）╯︵ ┻━┻)'
 
 -- purdy prompt
 \set PROMPT1 '(%[%033[33;1m%]%n@%/%[%033[0m%])%x [psql]> '
@@ -38,3 +39,5 @@
 -- terse verbosity, when looking for compilation errors please make sure to change
 -- to \set VERBOSITY all
 \set VERBOSITY terse
+
+\set PSQL_EDITOR /usr/local/bin/nvim

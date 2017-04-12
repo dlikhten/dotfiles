@@ -10,6 +10,7 @@ layout dual-small-at-donorschoose '0xDBE'             corner top-left resize:scr
 layout dual-small-at-donorschoose 'Mail'              corner top-left resize:screenSizeX;screenSizeY 0
 layout dual-small-at-donorschoose 'Outlook'           corner top-left resize:screenSizeX;screenSizeY 0
 layout dual-small-at-donorschoose 'HipChat'           corner top-left resize:screenSizeX;screenSizeY 0
+layout dual-small-at-donorschoose 'Slack'             corner top-left resize:screenSizeX;screenSizeY 0
 layout dual-small-at-donorschoose 'Skype'             corner top-left resize:screenSizeX;screenSizeY 0
 layout dual-small-at-donorschoose 'Calendar'          corner top-left resize:screenSizeX;screenSizeY 0
 layout dual-small-at-donorschoose 'IntelliJ IDEA 14'  corner top-left resize:screenSizeX;screenSizeY 0
@@ -36,6 +37,7 @@ layout dual-at-donorschoose '0xDBE'             corner top-left resize:screenSiz
 layout dual-at-donorschoose 'Mail'              corner top-left resize:screenSizeX;screenSizeY 0
 layout dual-at-donorschoose 'Outlook'           corner top-left resize:screenSizeX;screenSizeY 0
 layout dual-at-donorschoose 'HipChat'           corner top-left resize:screenSizeX;screenSizeY 0
+layout dual-at-donorschoose 'Slack'             corner top-left resize:screenSizeX;screenSizeY 0
 layout dual-at-donorschoose 'Skype'             corner top-left resize:screenSizeX;screenSizeY 0
 layout dual-at-donorschoose 'Calendar'          corner top-left resize:screenSizeX;screenSizeY 0
 layout dual-at-donorschoose 'IntelliJ IDEA 14'  corner top-left resize:screenSizeX;screenSizeY 0
@@ -55,6 +57,7 @@ layout solo 'Spring Tool Suite' corner top-left resize:screenSizeX;screenSizeY 0
 layout solo 'Mail'              corner top-left resize:screenSizeX;screenSizeY 0
 layout solo 'Outlook'           corner top-left resize:screenSizeX;screenSizeY 0
 layout solo 'HipChat'           corner top-left resize:screenSizeX;screenSizeY 0
+layout solo 'Slack'             corner top-left resize:screenSizeX;screenSizeY 0
 layout solo 'Skype'             corner top-left resize:screenSizeX;screenSizeY 0
 layout solo 'Calendar'          corner top-left resize:screenSizeX;screenSizeY 0
 layout solo 'Google Music'      corner top-left resize:screenSizeX;screenSizeY 0
