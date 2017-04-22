@@ -1,6 +1,6 @@
 [user]
 	name = Dmitriy Likhten
-  email = dlikhten@gmail.com
+	email = dlikhten@gmail.com
 [color]
   branch = auto
   diff = auto
@@ -18,7 +18,8 @@
   wip = !git add -u && git commit -m "WIP"
 	undo-commit = reset --soft HEAD^
 	list-ignored = !git ls-files -v | grep \"^[[:lower:]]\"
-  pull-request = !git push origin && open "https://github.com/DonorsChoose/donorschoose-web/compare/resolved...dlikhten:`git symbolic-ref --short HEAD`"
+  pull-request = !git push origin && open "https://github.com/dwnld/dwnld_web_hosting/compare/develop...`git symbolic-ref --short HEAD`"
+
   p = push origin
   pf = push origin --force
   pr = pull --rebase dc-master resolved
@@ -46,3 +47,5 @@
 
 [rebase]
   autostash = true
+[commit]
+	template = /Users/dlikhten/.stCommitMsg

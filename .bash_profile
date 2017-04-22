@@ -51,3 +51,4 @@ test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shel
 
 # gitql
 export DYLD_LIBRARY_PATH=$PWD/libgit2/install/lib
+
