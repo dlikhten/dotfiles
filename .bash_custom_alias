@@ -1,0 +1,2 @@
+alias vweb='cd ~/Developer/src/dwnld_web_hosting'
+alias vserver='vweb && npm run watch-no-lint'

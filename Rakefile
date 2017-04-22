@@ -14,6 +14,4 @@ task :install do
     next if exclude_list.include?(target)
     FileUtils.ln_s(item, File.expand_path(target), force: true, verbose: true)
   end
-
-  FileUtils.touch File.expand_path('~/.bash_custom_alias')
 end
