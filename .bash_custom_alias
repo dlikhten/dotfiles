@@ -1,2 +1,3 @@
 alias vweb='cd ~/Developer/src/dwnld_web_hosting'
-alias vserver='vweb && npm run watch-no-lint'
+alias vservices='cd ~/Developer/src/dwnld_services'
+alias vserver="vweb && nice -n 20 bash --rcfile ~/.bash_rofile -c 'npm run watch-no-lint'"
