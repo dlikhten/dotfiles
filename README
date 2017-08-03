@@ -1,0 +1,7 @@
+Run the following commands once installed:
+
+    brew install bash-completion
+    brew install jenv
+    <install rvm>
+    
+Restart your shell
