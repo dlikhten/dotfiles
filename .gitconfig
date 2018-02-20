@@ -1,6 +1,6 @@
 [user]
 	name = Dmitriy Likhten
-  email = dlikhten@gmail.com
+	email = dlikhten@gmail.com
 [color]
   branch = auto
   diff = auto
@@ -40,9 +40,10 @@
 [fetch]
 	prune = true
 [filter "lfs"]
-	clean = git-lfs clean %f
-	smudge = git-lfs smudge %f
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
 	required = true
+	process = git-lfs filter-process
 
 [rebase]
   autostash = true
