@@ -8,7 +8,7 @@
 
 
 -- disable autocommit
---\unset AUTOCOMMIT
+\unset AUTOCOMMIT
 
 -- each statement creates a checkpoint, roll it back on error
 \set ON_ERROR_ROLLBACK

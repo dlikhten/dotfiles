@@ -31,6 +31,10 @@ fi
 # jenv (rvm for java)
 export PATH="$HOME/.jenv/bin:$PATH"
 
+# nvm (node version manager)
+export NVM_DIR="$HOME/.nvm"
+. "/usr/local/opt/nvm/nvm.sh"
+
 # path for brew
 export PATH="/usr/local/bin:$PATH"
 
