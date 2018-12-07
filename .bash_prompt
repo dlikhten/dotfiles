@@ -22,6 +22,15 @@ function __my_jenv_java_version {
   fi
 }
 
+function __my_node_version {
+  output=`nvm current | sed "s/ .*//"`
+  if [ "$output" == 'system' ]; then
+    echo ""
+  else
+    echo "n$output "
+  fi
+}
+
 bash_prompt() {
   local NONE="\[\033[0m\]"    # unsets color to term's fg color
 
@@ -59,7 +68,7 @@ bash_prompt() {
   local UC=$W                 # user's color
   [ $UID -eq "0" ] && UC=$R   # root's color
 
-  PS1="$B$Y$EMY\w$EMB\$(__git_branch)$EMB\$(__git_dirty)${NONE} $ "
+  PS1="$(__my_node_version())$B$Y$EMY\w$EMB\$(__git_branch)$EMB\$(__git_dirty)${NONE} $ "
 }
 
 # configure the bash prompt

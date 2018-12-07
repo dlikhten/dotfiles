@@ -27,8 +27,8 @@
 \pset null '(╯°□°）╯︵ ┻━┻)'
 
 -- purdy prompt
-\set PROMPT1 '(%[%033[33;1m%]%n@%/%[%033[0m%])%x [psql]> '
-\set PROMPT2 '(%[%033[33;1m%]%n@%/%[%033[0m%])%x [psql]| '
+\set PROMPT1 '(%M %[%033[33;1m%]%n@%/%[%033[0m%])%x [psql]> '
+\set PROMPT2 '(%M %[%033[33;1m%]%n@%/%[%033[0m%])%x [psql]| '
 
 
 -- display timing information

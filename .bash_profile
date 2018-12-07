@@ -32,8 +32,10 @@ fi
 export PATH="$HOME/.jenv/bin:$PATH"
 
 # nvm (node version manager)
+#[[ -s "$HOME/.avn/bin/avn.sh" ]] && source "$HOME/.avn/bin/avn.sh" # load avn
 export NVM_DIR="$HOME/.nvm"
-. "/usr/local/opt/nvm/nvm.sh"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # path for brew
 export PATH="/usr/local/bin:$PATH"
@@ -55,5 +57,7 @@ test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shel
 
 # gitql
 export DYLD_LIBRARY_PATH=$PWD/libgit2/install/lib
-[[ -s "$HOME/.avn/bin/avn.sh" ]] && source "$HOME/.avn/bin/avn.sh" # load avn
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# auto activate virtualenv
+source ~/developer/src/dotfiles/virtualenv-auto-activate.sh
+
