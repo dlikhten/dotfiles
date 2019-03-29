@@ -59,5 +59,5 @@ test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shel
 export DYLD_LIBRARY_PATH=$PWD/libgit2/install/lib
 
 # auto activate virtualenv
-source ~/developer/src/dotfiles/virtualenv-auto-activate.sh
+#source ~/developer/src/dotfiles/virtualenv-auto-activate.sh
 

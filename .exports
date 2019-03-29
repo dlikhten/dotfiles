@@ -36,3 +36,6 @@ export JAVA_HOME=$(/usr/libexec/java_home)
 
 export GOPATH=~/.go
 export PATH=$PATH:/usr/local/opt/go/libexec/bin:$GOPATH/bin
+
+export PYTHON_3_7_PATH=~/Library/Python/3.7
+export PATH=$PATH:$PYTHON_3_7_PATH/bin
