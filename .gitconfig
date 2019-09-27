@@ -18,7 +18,8 @@
   wip = !git add -u && git commit -m "WIP"
 	undo-commit = reset --soft HEAD^
 	list-ignored = !git ls-files -v | grep \"^[[:lower:]]\"
-  pull-request = !git push origin && open "https://github.com/DonorsChoose/donorschoose-web/compare/resolved...dlikhten:`git symbolic-ref --short HEAD`"
+  github-location = "!f() { git remote -v | grep 'origin' | grep '(push)' | sed 's/.*git@github.com://' | sed 's/\\.git.*//'; }; f"
+  pull-request = !git push origin && open "https://github.com/`git github-location`/compare/develop...`git symbolic-ref --short HEAD`"
   p = push origin
   pf = push origin --force
   pr = pull --rebase dc-master resolved

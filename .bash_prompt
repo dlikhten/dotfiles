@@ -10,6 +10,7 @@ function __git_branch {
 }
 
 function __my_rvm_ruby_version {
+  # echo "r "
   echo "r`~/.rvm/bin/rvm-prompt v g` "
 }
 

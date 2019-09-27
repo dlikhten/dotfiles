@@ -51,3 +51,17 @@ test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shel
 
 # gitql
 export DYLD_LIBRARY_PATH=$PWD/libgit2/install/lib
+
+# nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+[[ -s "$HOME/.avn/bin/avn.sh" ]] && source "$HOME/.avn/bin/avn.sh" # load avn
+
+# home bin folder for executables
+export PATH="$HOME/developer/bin:$PATH"
+
+#heroku
+if [ -f heroku ]; then
+  heroku autocomplete:script bash;
+fi
