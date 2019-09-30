@@ -1,5 +1,5 @@
 alias vim='mvim'
-alias dotfiles='cd ~/repos/dotfiles'
+alias dotfiles='cd ~/developer/src/dotfiles'
 alias vimconf='cd ~/.vim'
 alias ls='ls -G'
 alias clear='echo "use command+k"'
