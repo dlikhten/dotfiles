@@ -1,6 +1,6 @@
 [user]
 	name = Dmitriy Likhten
-  email = dlikhten@gmail.com
+	email = dlikhten@gmail.com
 [color]
   branch = auto
   diff = auto
@@ -19,7 +19,8 @@
 	undo-commit = reset --soft HEAD^
 	list-ignored = !git ls-files -v | grep \"^[[:lower:]]\"
   github-location = "!f() { git remote -v | grep 'origin' | grep '(push)' | sed 's/.*git@github.com://' | sed 's/\\.git.*//'; }; f"
-  pull-request = !git push origin && open "https://github.com/`git github-location`/compare/develop...`git symbolic-ref --short HEAD`"
+  source-branch = echo 'develop'
+  pull-request = !git push origin && open "https://github.com/`git github-location`/compare/`git source-branch`...`git symbolic-ref --short HEAD`"
   p = push origin
   pf = push origin --force
   pr = pull --rebase dc-master resolved
@@ -29,12 +30,12 @@
 [push]
 	default = current
 [core]
-	excludesfile = /Users/dlikhten/.gitignore_global
+	excludesfile = /Users/dmitriy/.gitignore_global
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
 [mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
 [help]
 	autocorrect = 10
@@ -47,3 +48,5 @@
 
 [rebase]
   autostash = true
+[commit]
+	template = /Users/dmitriy/.stCommitMsg
