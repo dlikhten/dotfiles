@@ -25,9 +25,6 @@ if [ -f `brew --prefix`/etc/bash_completion ]; then
     . `brew --prefix`/etc/bash_completion
 fi
 
-# rvm
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # load RVM
-
 # jenv (rvm for java)
 export PATH="$HOME/.jenv/bin:$PATH"
 
@@ -65,3 +62,7 @@ export PATH="$HOME/developer/bin:$PATH"
 if [ -f heroku ]; then
   heroku autocomplete:script bash;
 fi
+
+# rvm
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # load RVM
+

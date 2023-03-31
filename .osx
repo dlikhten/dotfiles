@@ -13,7 +13,7 @@ defaults write NSGlobalDomain KeyRepeat -int 0
 defaults write NSGlobalDomain NSWindowResizeTime -float 0.001
 
 # Enable iTunes track notifications in the Dock
-defaults write com.apple.dock itunes-notifications -bool true
+#defaults write com.apple.dock itunes-notifications -bool true
 
 # Automatically open a new Finder window when a volume is mounted
 # what's this? Is this OSX 10.7?
@@ -24,13 +24,13 @@ defaults write com.apple.frameworks.diskimages auto-open-rw-root -bool true
 defaults write com.apple.Safari IncludeDebugMenu -bool true
 
 # Display full POSIX path as Finder window title
-defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
+#defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
 
 # Enable snap-to-grid for desktop icons
 /usr/libexec/PlistBuddy -c "Set :DesktopViewSettings:IconViewSettings:arrangeBy grid" ~/Library/Preferences/com.apple.finder.plist
 
 # Disable mouse acceleration
-defaults write .GlobalPreferences com.apple.mouse.scaling -1
+#defaults write .GlobalPreferences com.apple.mouse.scaling -1
 
 # Disable press and hold to write alt characters
-defaults write -g ApplePressAndHoldEnabled -bool false
+#defaults write -g ApplePressAndHoldEnabled -bool false

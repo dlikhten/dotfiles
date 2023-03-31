@@ -8,13 +8,13 @@
 
 
 -- disable autocommit
-\unset AUTOCOMMIT
+-- \unset AUTOCOMMIT
 
 -- each statement creates a checkpoint, roll it back on error
-\set ON_ERROR_ROLLBACK
+-- \set ON_ERROR_ROLLBACK
 
 -- stop execution when an error occurs
-\set ON_ERROR_STOP
+-- \set ON_ERROR_STOP
 
 -- pretty borders
 \pset border 2
@@ -24,7 +24,8 @@
 
 -- nulls are easy to distinguish
 --\pset null ¤
-\pset null '(╯°□°）╯︵ ┻━┻)'
+--\pset null '(╯°□°）╯︵ ┻━┻)'
+\pset null 'ヽ༼ ಠ益ಠ ༽ﾉ'
 
 -- purdy prompt
 \set PROMPT1 '(%[%033[33;1m%]%n@%/%[%033[0m%])%x [psql]> '

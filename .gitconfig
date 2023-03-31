@@ -9,6 +9,8 @@
 	ui = 1
 [format]
 	pretty = fuller
+[pull-requests]
+  source-branch = develop
 [alias]
   st = status
   co = checkout
@@ -19,11 +21,11 @@
 	undo-commit = reset --soft HEAD^
 	list-ignored = !git ls-files -v | grep \"^[[:lower:]]\"
   github-location = "!f() { git remote -v | grep 'origin' | grep '(push)' | sed 's/.*git@github.com://' | sed 's/\\.git.*//'; }; f"
-  source-branch = echo 'develop'
-  pull-request = !git push origin && open "https://github.com/`git github-location`/compare/`git source-branch`...`git symbolic-ref --short HEAD`"
+  pull-request = !git push origin && open "https://github.com/`git github-location`/compare/`git config --get pull-requests.source-branch`...`git symbolic-ref --short HEAD`"
   p = push origin
   pf = push origin --force
-  pr = pull --rebase dc-master resolved
+  pr = pull --rebase origin master
+  trigger = commit --allow-empty -m "trigger"
 
 [mergetool]
   keepBackup = true
