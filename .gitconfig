@@ -1,6 +1,6 @@
 [user]
 	name = Dmitriy Likhten
-  email = dlikhten@gmail.com
+	email = dlikhten@gmail.com
 [color]
   branch = auto
   diff = auto
@@ -9,6 +9,8 @@
 	ui = 1
 [format]
 	pretty = fuller
+[pull-requests]
+  source-branch = develop
 [alias]
   st = status
   co = checkout
@@ -18,22 +20,24 @@
   wip = !git add -u && git commit -m "WIP"
 	undo-commit = reset --soft HEAD^
 	list-ignored = !git ls-files -v | grep \"^[[:lower:]]\"
-  pull-request = !git push origin && open "https://github.com/DonorsChoose/donorschoose-web/compare/resolved...dlikhten:`git symbolic-ref --short HEAD`"
+  github-location = "!f() { git remote -v | grep 'origin' | grep '(push)' | sed 's/.*git@github.com://' | sed 's/\\.git.*//'; }; f"
+  pull-request = !git push origin && open "https://github.com/`git github-location`/compare/`git config --get pull-requests.source-branch`...`git symbolic-ref --short HEAD`"
   p = push origin
   pf = push origin --force
-  pr = pull --rebase dc-master resolved
+  pr = pull --rebase origin master
+  trigger = commit --allow-empty -m "trigger"
 
 [mergetool]
   keepBackup = true
 [push]
 	default = current
 [core]
-	excludesfile = /Users/dlikhten/.gitignore_global
+	excludesfile = /Users/dmitriy/.gitignore_global
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
 [mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
 [help]
 	autocorrect = 10
@@ -46,3 +50,5 @@
 
 [rebase]
   autostash = true
+[commit]
+	template = /Users/dmitriy/.stCommitMsg

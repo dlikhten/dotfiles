@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/env bash
 
 function __git_dirty {
   git diff --quiet HEAD &>/dev/null 
@@ -10,6 +10,7 @@ function __git_branch {
 }
 
 function __my_rvm_ruby_version {
+  # echo "r "
   echo "r`~/.rvm/bin/rvm-prompt v g` "
 }
 
